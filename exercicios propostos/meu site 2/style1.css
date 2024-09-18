@@ -1,0 +1,390 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'alagard' ;
+    src: url('font/alagard.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+:root{
+    --cor0:#AD0000;
+    --cor1:#AD6A00;
+    --cor2:#033571;
+    --cor3:#008B00;
+    --cor4:#001937;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body{
+    font-family: "alagard", Arial, Helvetica, sans-serif;
+    background-color: rgb(109, 106, 106);
+}
+header{
+    background-image: linear-gradient(to right, rgb(180, 12, 12) ,rgba(10, 9, 9, 0.945), rgb(21, 21, 168));
+    border-radius: 0px 0px 15px 15px;
+}
+header .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+        
+}
+header .container h1{
+    font-size: 100px;
+    color: aliceblue;
+}
+header .container .mario1{
+    height: 100%;
+    margin-top: 30px;
+    
+    
+}
+header h2{
+    text-align: center;
+    font-size: 45px;
+    color: azure;
+}
+main .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/* menu inico*/
+main ul{
+    border: solid;
+    border-radius: 10px;
+    border-width: 30px;
+    background-color: #490c0cf6;
+    border-color: rgb(104, 16, 28);
+    margin: 20px;
+    height: 450px;
+    
+}
+main .container .menu img{
+    margin: 10px 0px 10px 20px;
+    
+}
+main li{
+    margin-top: 15px;
+    padding-left: 20px;
+    border: solid rgb(112, 35, 35) 10px;
+}
+main .container li>a{
+    color: white;
+
+}
+main .container li>a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+main .container .menu-text{
+    width: 45%;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+main .container .menu-text h1{
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+main .container .menu-text p{
+    color: rgb(247, 244, 244);
+    font-size: 30px;
+    text-align: justify;
+    text-indent: 30px;
+    margin-top: 40px;
+    padding-bottom: 100px;
+}
+main .container .menu-song{
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+main .container .menu-song #audio{
+    margin-left: 100px;
+    height: 100px;
+
+    
+}
+main .container .menu-song img{
+    
+    height: 400px;
+    padding-left: 30px;
+}
+
+/*menu fim*/
+
+/*Article inicio*/
+.artigo .container{
+    display: flex;
+    flex-direction: column;
+    
+  
+}
+ .artigo .container .textoexp{
+    align-items: center;
+    justify-content: center;
+    color: rgb(252, 249, 249);
+}
+ .artigo .container .textoexp h1{
+    text-align: center;
+    font-size: 50px;
+}
+ .artigo .container .textoexp p{
+    padding-top: 30px;
+    margin: auto;
+    text-align: justify;
+    width: 40%;
+    text-indent: 40px;
+    font-size: 30px;
+}
+
+.artigo .container .textoexp2{
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+ .artigo .container .textoexp2 h2{
+    text-align: center;
+    font-size: 50px;
+}
+ .artigo .container .textoexp2 p{
+    padding-top: 30px;
+    margin: auto;
+    text-align: justify;
+    width: 40%;
+    text-indent: 40px;
+    font-size: 30px;
+}
+
+.artigo .container .textoexp3{
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+ .artigo .container .textoexp3 h2{
+    text-align: center;
+    font-size: 50px;
+}
+ .artigo .container .textoexp3 p{
+    padding-top: 30px;
+    margin: auto;
+    text-align: justify;
+    width: 40%;
+    text-indent: 40px;
+    font-size: 30px;
+}
+
+.artigo .container .textoexp4{
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+ .artigo .container .textoexp4 h2{
+    text-align: center;
+    font-size: 50px;
+}
+ .artigo .container .textoexp4 p{
+    padding-top: 30px;
+    margin: auto;
+    text-align: justify;
+    width: 40%;
+    text-indent: 40px;
+    font-size: 30px;
+}
+footer{
+    background-image: linear-gradient(to right, rgb(180, 12, 12) ,rgba(10, 9, 9, 0.945), rgb(21, 21, 168));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 30px;
+ 
+}
+footer .container{
+    color: white;
+    font-size: 30px;
+}
+footer .container p{
+    text-align: center;
+    padding-left:  20px;
+    padding-bottom: 30px;
+}
+footer .container img{
+    margin-right: 20px;
+    
+   
+}
+
+
+
+
+/*Article final*/
+@media (max-width: 1260px){
+    header .container h1{
+        text-align: center;
+        font-size: 4.4em;
+    }
+    header h2{
+        text-align: center;
+        font-size: 2.5em;
+        padding: 0px 0px 10px 0px ;
+        margin-bottom: 10px;
+    }
+    main .container{
+        font-size: 2em;
+        flex-direction: column;
+        margin: 40px;        
+    }
+    main .container .menu{
+        flex-direction: column;
+        text-align: center;
+
+                
+    }
+    main .container ul{
+        height: 100%;
+    }
+    main .container .menu-text{
+        width: 100%;
+        justify-content: center;
+    }
+    main .container .menu-song{
+        justify-content: center;
+        margin-top: 30px;
+    }
+    main .container .menu-song #audio1{
+        width: 100%;
+        
+    }
+    main .container .menu-song img{
+        margin: auto;
+    }
+    article .container{
+        flex-direction: column;
+        width: 95%;
+    }
+    .artigo .container .textoexp h1{
+        text-align: center;
+        width: 100%;
+    }
+    .artigo .container .textoexp p{
+        text-align: justify;
+        width: 100%;
+
+    }
+    .artigo .container .textoexp2 h2{
+        text-align: center;
+        width: 100%;
+    }
+    .artigo .container .textoexp2 p{
+        text-align: justify;
+        width: 100%;
+
+    }
+    .artigo .container .textoexp3 h2{
+        text-align: center;
+        width: 100%;
+    }
+    .artigo .container .textoexp3 p{
+        text-align: justify;
+        width: 100%;
+
+    }
+    .artigo .container .textoexp4 h2{
+        text-align: center;
+        width: 100%;
+    }
+    .artigo .container .textoexp4 p{
+        text-align: justify;
+        width: 100%;
+
+    }
+    footer .container{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+@media (max-width: 860px){
+        header .container h1{
+            text-align: center;
+            font-size: 2.5em;
+        }
+        header h2{
+            text-align: center;
+            font-size: 1.5em;
+            padding: 0px 0px 10px 0px ;
+            margin-bottom: 10px;
+        }    
+        main .container{
+            font-size: 2em;
+            text-align: center;
+            flex-direction: column;
+            margin: 40px;
+        }
+
+        main .container .menu-text{
+            font-size: 30px;
+            width: 100%;
+            justify-content: center;
+        }
+        main .container .menu-text p{
+            font-size: 20px;
+            width: 100%;
+            justify-content: center;
+        }
+        article .container{
+            width:85%;
+        }
+        .artigo .container .textoexp h1{
+            font-size: 40px;
+            text-align: center;
+        }
+        .artigo .container .textoexp p{
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+    
+        }
+        .artigo .container .textoexp2 h2{
+            font-size: 40px;
+            text-align: center;
+        }
+        .artigo .container .textoexp2 p{
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+    
+        }.artigo .container .textoexp3 h2{
+            font-size: 40px;
+            text-align: center;
+        }
+        .artigo .container .textoexp3 p{
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+    
+        }.artigo .container .textoexp4 h2{
+            font-size: 40px;
+            text-align: center;
+        }
+        .artigo .container .textoexp4 p{
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+    
+        }
+}

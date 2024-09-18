@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(140, 140, 236);
+
+}
+h1 {
+    color: rgb(172, 197, 129);
+    text-align: center;
+    text-decoration: underline;
+
+}
+img {
+    
+    
+}
+h2 {
+    color: rgb(23, 14, 153);
+}
+p {
+    text-align: justify;
+    
+}

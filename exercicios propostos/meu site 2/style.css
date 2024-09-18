@@ -1,0 +1,479 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'alagard' ;
+    src: url('font/alagard.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+:root{
+    --cor0:#AD0000;
+    --cor1:#AD6A00;
+    --cor2:#033571;
+    --cor3:#008B00;
+    --cor4:#001937;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body{
+    background-color: #032650d2;
+    font-family: 'alagard', Arial, Helvetica, sans-serif;
+}
+
+.background-intro{
+    background-color: #001937;
+
+
+}
+
+/* Classes reutilizaveis*/
+section,footer{
+    padding: 2.7rem 0;
+
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0px 5%;
+    margin: 0px auto;
+
+}
+.btn-gradient{
+    padding: 10px 25px;
+    color: white;
+    border: solid;
+    border-color: #3b6ead;
+    cursor: pointer;
+    background-image: linear-gradient(to right,var(--cor4),var(--cor2));
+
+
+}
+/* Classes do Site*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+
+}
+.ul{
+    display: flex;
+    align-items: center;
+
+}
+.ul li{
+    margin: 0 35px;
+    font-size: 15px;
+
+}
+.ul li a{
+
+    color: white;
+}
+
+/*----------------------main----------------*/
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}
+.main-text{
+    width: 50%;
+    color: white;
+    
+}
+
+.main-text h1{
+    font-size: 4.5rem;
+
+}
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-img{
+    width: 50%;
+
+}
+/*
+.main-img img{
+    width: 100%;
+
+}*/
+/*--menu icon--*/
+.menu-icon{
+    display: none;
+    position: relative;
+    z-index: 10;
+
+}
+
+/*Resultados*/
+
+.resultados {
+
+    background-color: #0c448844;
+
+}
+.resultados .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.resultados .resultados-text{
+    color: white;
+    font-size: 40px;
+    
+}
+
+.resultados .resultados-numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+
+}
+
+.resultados .resultados-numero p{
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+
+}
+.resultados .resultados-numero p span{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+/*Section Diferenciais*/
+.diferenciais .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    text-align: justify;
+    text-indent: 20px;
+
+}
+.diferenciais .card{
+    width: 30%;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 15px;
+   
+}
+
+.diferenciais .card:hover{
+    background-color: #001937;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.233);
+    transition: 0.3s;
+}
+.diferenciais .card img{
+    width: 30%;
+
+}
+
+.diferenciais .card .titulo {
+    margin:  13px 0;
+    font-weight: 600;
+    color: white;
+    font-size: 30px;
+
+}
+
+.diferenciais .card p {
+
+    color: rgb(216, 209, 209);
+}
+/*Section Casa*/
+.casa .container{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    text-indent: 20px;
+}
+.casa .casa-img{
+    width: 50%;
+    
+}
+.casa .casa-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.casa .casa-text {
+    width: 50%;
+    padding-left: 90px;
+
+}
+
+.casa .casa-text h2{
+    font-size: 40px;
+    color: aliceblue;
+
+}
+.casa .casa-text p{
+    font-size: 20px;
+    color: aliceblue;
+    margin: 20px 0;
+}
+.casa .casa-text p b {
+    font-size: 30px;
+    font-weight: 600;
+}
+/*----Section-melhores lugares */
+.melhores-lugares .azul{
+    font-size: 34px;
+    color: white;
+    font-weight: 600;
+    
+}
+.melhores-lugares h2{
+    font-size: 50px;
+    color: white;
+}
+.melhores-lugares .card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.melhores-lugares .card a:hover{
+    color: white;
+    text-decoration: underline;
+    background-color: #3b6ead;
+
+}
+.melhores-lugares .card .card-item{
+    width: 30%;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 20px;
+    
+}
+.melhores-lugares .card .card-item:hover{
+    background-color: #001937;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.185);
+
+}
+.melhores-lugares .card-item p{
+    font-size: 20px;
+    color: white;
+
+}
+.melhores-lugares .card-item h3{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+/*Fim section melhores lugares*/
+/*Section News letter*/
+
+.newletter{ 
+    background-color: #195fb43d;
+    
+
+}
+.newletter .box-letter{
+    text-align: center;
+    background-image: url('imagens/wallpapper.webp');
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.newletter .box-letter h2{
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+.newletter .box-letter p{
+    color: white;
+    margin-top: 20px 0;
+    text-align: justify;
+    text-indent: 20px;
+
+}
+.newletter .box-letter input{
+    width: 35%;
+    border-radius: 20px;
+    padding: 15px;
+    border: none;
+    outline: none;
+
+
+}
+/*Fim news letter*/
+/*footer*/
+footer{
+    background-color: #001937;
+    color: white;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+footer .container h3{
+    margin-bottom: 15px;
+}
+footer .container .ul {
+    width: 25%;
+}
+footer .container li{
+    margin-bottom: 10px;
+}
+footer .container a{
+    color: white;
+}
+footer .container a:hover{
+    color: #033571;
+    text-decoration: underline;
+}
+footer .container img{
+    margin-right: 20px;
+}
+footer .container ul >p{
+    margin-bottom: 20px;
+}
+
+/*fim footer*/
+/*--responsivo--*/
+
+@media (max-width: 860px){
+    .menu-icon{
+        display: block;
+    }
+    .ul{
+        position: fixed;
+        background-color: #001937;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ul li{
+        font-size: 20px;
+        margin: 20px 0;
+
+    }
+    .ul.ativo{
+        left: 0;
+    }
+    main .container{
+        flex-direction: column;
+    }
+    main .container .main-img{
+        width: 100%;
+        margin-right: 60px;
+    }
+    main .container .main-text{
+        width: 100%;
+        text-align: center;
+    }
+    main .container .main-text h1{
+        font-size: 4rem;
+
+    }
+    main .container .main-text div{
+        justify-content: center;
+    }
+    .resultados .container{
+        flex-direction: column;
+        
+    }
+    .resultados .resultados-text,
+    .resultados .resultados-numero{
+        width: 100% ;
+        text-align: center;
+
+    }
+
+    .resultados-numero{
+        margin-top: 20px ;
+    }
+
+    .diferenciais .container{
+        flex-direction: column;
+        
+    }
+    .diferenciais .card{
+        width: 100%;
+    }
+    .casa .container{
+        flex-direction: column-reverse;
+    }
+    .casa .casa-text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+
+    }
+    .casa .casa-img{
+        width: 100%;
+        text-align: center;
+        padding-right: 40px;
+    }
+    .melhores-lugares .card{
+        flex-direction: column;
+
+    }
+    .melhores-lugares .card .card-item{
+        width: 100%;
+        margin-top: 30px;
+
+    }
+    .newletter .box-letter{
+        padding: 50px;
+    }
+    .newletter .box-letter h2{
+        font-size: 2rem;
+    }
+    .newletter .box-letter input{
+        margin-top: 20px;
+        width: 90%;
+    }
+    .newletter .box-letter p{
+        text-align: center;
+        
+    }
+    .newletter .box-letter button{
+        width: 50%;
+        margin-top: 20px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container ul{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 440px){
+    .resultados .resultados-numero{
+    flex-direction: column;
+    }
+    main .container .main-text h1{
+        font-size: 3rem;
+    }
+}

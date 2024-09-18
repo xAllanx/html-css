@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'alagard' ;
+    src: url('font/alagard.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+:root{
+    --cor0:#AD0000;
+    --cor1:#AD6A00;
+    --cor2:#033571;
+    --cor3:#008B00;
+    --cor4:#001937;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    font-family: 'alagard';
+    background-color: lightgray;    
+      
+    
+}
+
+header{ 
+    background-image: linear-gradient(to right, var(--cor0),white,var(--cor2));
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 100px;
+
+}
+
+header h1 {
+    text-align: center;
+
+}
+header h2{
+    text-align: center;
+
+}
+header img#sonic{
+    position: absolute;
+    right: 15%;
+    
+}
+header img#mario{
+    position: absolute ;
+    right: 85%;
+}
+
+
+main{
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+
+}
+
+nav img#ml{
+    position: absolute;
+    left: 2%;
+
+}
+nav li{
+    padding: 10px;
+    
+
+}
+
+article{
+    width: 80%;
+    text-align: center;
+    border: 3px solid var(--cor2);
+    padding: 20px;
+
+}
+article p{
+    padding: 40px;
+    text-align: auto;
+    text-indent: 20px;
+    
+
+
+}  
+    
+    
+    
+
+article img{
+   
+
+    
+}
+    
+
+
+footer{
+    text-align: center;
+    background-color: var(--cor2) ;
+    padding-top: 10px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+
+
+}

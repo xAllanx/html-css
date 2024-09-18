@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        body{
+            background-image: linear-gradient(to left, rgb(126, 236, 126),rgb(169, 216, 164));
+        }
+        h1{
+            background-color: rgba(128, 240, 162, 0.541);
+            height: 300px;
+            width: 300px;
+            /*Shorthands (Atalhos dos comandos abaixo*/
+            
+            border: 10px solid rgba(13, 34, 27, 0.486) ;
+
+            padding: 10px 10px 10px 10px;
+
+            margin: 20px auto 40px auto;
+
+            outline: 5px double rgb(78,122,122);
+
+            /*Comandos completos
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgba(13, 34, 27, 0.486);
+
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            outline-width: 5px;
+            outline-style: double;
+            outline-color: rgb(78, 122, 122);*/
+        }
+        a{
+            background-color: rgb(145, 145, 233);
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgba(0, 0, 255, 0.74);
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box level </h1>
+    <p>parágrafos também sao exemplos de box-level mas os <a href="#">
+    são exemplos de caixa inline-level
+    </a>vamos ver como isso funciona.</p>
+</body>
+</html>
